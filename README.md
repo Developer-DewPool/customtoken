@@ -4,7 +4,7 @@ this is a Django separate module App for Custom Token generate for different Api
 
 1. git clone the source destination from https://github.com/DpDew/customtoken
 
-	"git clone https://github.com/DpDew/customtoken.git"
+	git clone https://github.com/DpDew/customtoken.git
 
 2. add 'customtoken' in your project and add to INSTALLED_APPS in setting.py
 
