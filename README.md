@@ -3,9 +3,9 @@ A) Installations
 this is a Django separate module App for Custom Token generate for different Api User with custom token key as custom name
 
 1. install customtoken or git clone the source destination from bitbucket.org
-	"git clone https://DpDew@bitbucket.org/DpDew/customtokengenerator.git"
+	"git clone https://github.com/DpDew/customtoken.git"
 
-2. add 'customtoken' to INSTALLED_APPS in setting.py
+2. add 'customtoken' in your project and add to INSTALLED_APPS in setting.py
 
 	INSTALLED_APPS = [
 			'....', 
@@ -18,7 +18,7 @@ this is a Django separate module App for Custom Token generate for different Api
 			'....'
 			]
 
-4. add custom key name in capital to variable after middleware
+4. add your own custom key name (<CUSTOMTOKEN>)
 
 	CUSTOMTOKENKEY = <CUSTOMTOKEN> ('Capital Letter')
 
@@ -36,9 +36,11 @@ this is a Django separate module App for Custom Token generate for different Api
 B) control to apitoken key
 when user open django admin panel there it will show APIUSERS and APIKEYS
 
-1. create user from Api users
+1. create user from APIUSERS
 
-2. create Api keys according to user
+2. create Api key from APIKEYS according to user created from APIUSERS
 
-after this admin can control apikey Activate or Deactivate or Delete on API ENDPOINT anytime
+after this admin can control apikey Activate or Deactivate or Delete on API ENDPOINT anytime.
+
+It is tested using postman and as well as in curl request where it added to Headers
 
