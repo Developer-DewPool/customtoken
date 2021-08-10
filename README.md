@@ -1,6 +1,12 @@
 A) Installations
 
-this is a Django separate module App for Custom Token generate for different Api User with custom token key as custom name
+this is a Django separate module App for Custom Token generate for APIs with custom token key and token value as Authorization.
+Example: Headers: { CUSTOMTOKENKEY: TOKEN KEY }
+
+You can add as a additional along with basic Authorization in Headers (it's optional).
+Example: Headers: { Authorization: Bearer token, CUSTOMTOKENKEY: TOKEN KEY }
+
+It will make more secure in middleware.
 
 1. git clone the source destination from https://github.com/DpDew/customtoken
 
@@ -9,15 +15,15 @@ this is a Django separate module App for Custom Token generate for different Api
 2. add 'customtoken' in your project and add to INSTALLED_APPS in setting.py
 
 	INSTALLED_APPS = [
-			'....', 
-			'customtoken'
-			]
+			    '....', 
+			    'customtoken'
+			 ]
 
 3. add middleware in setting.py
-	MIDDLEWARE = 	[
+	MIDDLEWARE = [
 			'customtoken.customaccessmiddleware.CustomMiddleware', 
 			'....'
-			]
+		     ]
 
 4. add your own custom key name (<CUSTOMTOKEN>)
 
