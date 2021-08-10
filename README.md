@@ -52,13 +52,13 @@ We highly recommend and only officially support the latest patch release of each
 
 * then finally make migration and migrate
 
-	python3 manage.py makemigrations
+	`python3 manage.py makemigrations`
 	and
-	python3 manage.py migrate
+	`python3 manage.py migrate`
 
 * then run 
 
-	python3 manage.py runserver
+	`python3 manage.py runserver`
 
 
 # Control to CUSTOMTOKEN App
