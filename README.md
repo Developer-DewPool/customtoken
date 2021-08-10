@@ -1,10 +1,15 @@
 A) Installations
 
 this is a Django separate module App for Custom Token generate for APIs with custom token key and token value as Authorization.
-Example: Headers: { <CUSTOMTOKENKEY>: <token value> }
+Example: Headers: { 
+			CUSTOMTOKENKEY: custom token value 
+		  }
 
 You can add as a additional along with basic Authorization in Headers (it's optional).
-Example: Headers: { Authorization: Bearer token, <CUSTOMTOKENKEY>: <token value> }
+Example: Headers: { 
+			Authorization: Bearer token, 
+			CUSTOMTOKENKEY: custom token value 
+		  }
 
 It will make more secure in middleware.
 
